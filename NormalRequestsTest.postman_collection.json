@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "eef1cb39-2c66-48f8-8856-f1be14f37c83",
+		"name": "NormalRequestsTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36796106"
+	},
+	"item": [
+		{
+			"name": "GetAllRequest",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/ver0/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ver0",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveCustomerRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\": \"KEKsady\",\r\n\"registrationDate\": \"2015-10-01\",\r\n\"dateOfBirth\": \"1999-11-08\",\r\n\"gender\": \"male\",\r\n\"email\": \"KEKsady@gmail.com\",\r\n\"lastDataChangeDate\": \"2022-10-01\",\r\n\"balance\": 123.34\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/ver0/customers/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ver0",
+						"customers",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateCustomerRequest",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"b817f73c-4dc3-4dfb-af50-caba3c8dcfbf\",\r\n    \"username\": \"KEKsady\",\r\n    \"registrationDate\": \"2015-07-01\",\r\n    \"dateOfBirth\": \"2003-11-08\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"KEK@gmail.com\",\r\n    \"lastDataChangeDate\": \"2024-07-07\",\r\n    \"balance\": 999.999\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/ver0/customers/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ver0",
+						"customers",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveAnotherCustomerRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\": \"DEEEEss\",\r\n\"registrationDate\": \"2019-07-09\",\r\n\"dateOfBirth\": \"1991-10-08\",\r\n\"gender\": \"male\",\r\n\"email\": \"deessss3123@gmail.com\",\r\n\"lastDataChangeDate\": \"2024-06-07\",\r\n\"balance\": 2000.30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/ver0/customers/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ver0",
+						"customers",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindCustomerByIDRequest",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\": \"KEKsad\",\r\n\"registrationDate\": \"2011-10-01\",\r\n\"dateOfBirth\": \"2003-11-08\",\r\n\"gender\": \"male\",\r\n\"email\": \"keeks@gmail.com\",\r\n\"lastDataChangeDate\": \"2024-10-01\",\r\n\"balance\": 1234.34\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/ver0/customers/c9dcdd51-ee5d-42ec-bd75-1802d9988104",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ver0",
+						"customers",
+						"c9dcdd51-ee5d-42ec-bd75-1802d9988104"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCustomerByIDRequest",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ver0/customers/delete/c9dcdd51-ee5d-42ec-bd75-1802d9988104",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ver0",
+						"customers",
+						"delete",
+						"c9dcdd51-ee5d-42ec-bd75-1802d9988104"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LastCheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/ver0/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ver0",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
